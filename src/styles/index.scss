@@ -7,6 +7,8 @@
 @import "variables";
 // @import "bootstrap";
 
+@import "honeycomb";
+
 html {
   font-family: $font-family;
   margin: 0 auto;
@@ -33,40 +35,103 @@ html {
     left: 0;
     z-index: 0;
   }
+}
 
-  h1 {
-    color: #000;
-    font-size: 6rem;
-    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
-    margin: 0;
-    position: relative;
-    top: 75px;
-  }
+h1 {
+  color: #000;
+  font-size: 6rem;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  margin: 0;
+  position: relative;
+  top: 75px;
+}
+
+h3 {
 }
 
 main {
   .about-us {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 500px;
 
     &__content {
+      display: flex;
+      justify-content: space-between;
       position: relative;
-      width: 100%;
-      max-width: 800px;
+      flex: 2 1 1400px;
       margin: 40px 0;
-      padding: 15px;
-      background-color: #fff;
     }
 
     &__border {
       position: absolute;
-      top: 15px;
-      bottom: 15px;
-      left: 15px;
-      right: 15px;
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+      right: 30px;
       border: 1px solid #e1e1e1;
 
+    }
+
+    &__text {
+      background-color: #fff;
+      flex: 1 2 900px;
+      padding: 60px;
+    }
+
+    &__icon {
+      background-image: $about-us-img;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: grayscale(1);
+      flex: 2 1 500px;
+      opacity: 0.6;
+
+    }
+  }
+
+  .featured-work {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    background-color: #181818;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex: 2 1 1400px;
+      margin: 40px 0;
+      background-color: #222222;
+    }
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex: 2 1 1400px;
+      margin: 40px 0;
+    }
+  }
+
+  .team {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex: 2 1 1400px;
     }
   }
 
@@ -74,8 +139,39 @@ main {
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
-    max-width: 400px;
+    flex: 1 2 400px;
+
+    &.inverse {
+      .section-number__block {
+        border: 1px solid #706868;
+      }
+
+      .section-number__number {
+        color: #706868;
+      }
+
+      .section-number__text {
+        background-color: #181818;
+        color: #fcfcfc;
+      }
+    }
+
+    &.left {
+      justify-content: flex-start;
+
+      .section-number__block {
+        border-left: none;
+      }
+    }
+
+
+    &.right {
+      justify-content: flex-end;
+
+      .section-number__block {
+        border-right: none;
+      }
+    }
 
     &__block {
       display: flex;
@@ -84,14 +180,8 @@ main {
       height: 300px;
       width: 300px;
       border: 1px solid #e1e1e1;
-
-      &.left {
-        border-left: none;
-      }
-
-      &.right {
-        border-right: none;
-      }
+      box-sizing: content-box;
+      border-radius: 2px;
     }
 
     &__number {
