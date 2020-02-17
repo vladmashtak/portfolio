@@ -7,7 +7,9 @@
 @import "variables";
 // @import "bootstrap";
 
+@import "~owl.carousel/dist/assets/owl.carousel.css";
 @import "honeycomb";
+@import "card";
 
 html {
   font-family: $font-family;
@@ -15,7 +17,19 @@ html {
   background-color: #f9f9f9;
 }
 
-.header {
+h1 {
+  color: #000;
+  font-size: 6rem;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  margin: 0;
+  position: relative;
+  top: 75px;
+}
+
+h3 {
+}
+
+header {
   display: flex;
 
   width: 100%;
@@ -37,16 +51,10 @@ html {
   }
 }
 
-h1 {
-  color: #000;
-  font-size: 6rem;
-  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
-  margin: 0;
-  position: relative;
-  top: 75px;
-}
-
-h3 {
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #181818;
 }
 
 main {
@@ -124,7 +132,7 @@ main {
   .team {
     display: flex;
     flex-direction: row;
-    min-height: 500px;
+    min-height: 700px;
 
 
     &__content {
