@@ -46,6 +46,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "particlesjs": "^2.2.3"
   }
 }

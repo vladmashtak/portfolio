@@ -3,6 +3,14 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+
+@import "~@glidejs/glide/src/assets/sass/glide.core";
+
 @import "clear-style";
 @import "variables";
 // @import "bootstrap";
@@ -17,6 +25,7 @@ html {
 }
 
 h1 {
+  font-family: $h-font-family;
   color: #000;
   font-size: 6rem;
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
@@ -26,6 +35,23 @@ h1 {
 }
 
 h3 {
+  font-family: $h-font-family;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: $h-font-family;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #e1e1e1;
+  }
 }
 
 header {
@@ -210,11 +236,10 @@ main {
       position: absolute;
       width: 300px;
       background-color: #f9f9f9;
-      font-size: 2rem;
-      font-weight: bold;
       padding: 10px 0;
       text-align: center;
       text-transform: uppercase;
+      margin: 0;
     }
   }
 }
