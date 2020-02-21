@@ -1,6 +1,8 @@
 
 import './styles/index.scss'
-import initHeader from './js/header';
 
+import './js/images';
+
+import initHeader from './js/header';
 
 initHeader();
