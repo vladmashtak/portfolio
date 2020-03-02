@@ -11,8 +11,16 @@ import '../images/php.png'
 import '../images/wordpress.png'
 
 
+// projects
+
 import '../images/projects/Screenshot1.png';
 import '../images/projects/Screenshot2.png';
 import '../images/projects/Screenshot3.png';
 import '../images/projects/Screenshot4.png';
 import '../images/projects/Screenshot5.png';
+
+// employee
+
+import '../images/employee/employee.jpg';
+import '../images/employee/employee2.jpg';
+import '../images/employee/employee3.jpg';

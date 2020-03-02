@@ -16,6 +16,16 @@
     border: 1px solid #fff;
     position: relative;
     left: 0;
+
+    & > img {
+      opacity: 0.8;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    box-shadow: inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
   }
 
   .card:not(:first-child) {
