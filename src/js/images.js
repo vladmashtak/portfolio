@@ -9,3 +9,10 @@ import '../images/nodejs.png'
 import '../images/postgresql.png'
 import '../images/php.png'
 import '../images/wordpress.png'
+
+
+import '../images/projects/Screenshot1.png';
+import '../images/projects/Screenshot2.png';
+import '../images/projects/Screenshot3.png';
+import '../images/projects/Screenshot4.png';
+import '../images/projects/Screenshot5.png';

@@ -1,0 +1,17 @@
+$transition-duration: 0.25s;
+$transition-timing-function: ease;
+
+@mixin transition($properties...) {
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  transition: $properties;
+}
+
+// Uses a consistent duration and ease.
+@mixin default-transition($properties...) {
+  $declarations: ();
+  @each $property in $properties {
+    $declarations: append($declarations, unquote('#{$property $transition-duration $transition-timing-function}'), comma);
+  }
+  @include transition($declarations);
+}

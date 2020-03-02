@@ -51,16 +51,48 @@
             </div>
         </div>
     </section>
-    <section class="featured-work">
-        <div class="featured-work__content">
-            <div id="projects" class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">0</li>
-                        <li class="glide__slide">1</li>
-                        <li class="glide__slide">2</li>
-                    </ul>
-                </div>
+    <section class="projects">
+        <div class="projects__content">
+            <div class="slider-section slider">
+                <input type="radio" name="slider" id="slide-1" class="slider__radio">
+                <input type="radio" name="slider" id="slide-2" class="slider__radio">
+                <input type="radio" name="slider" id="slide-3" class="slider__radio" checked>
+                <input type="radio" name="slider" id="slide-4" class="slider__radio">
+                <input type="radio" name="slider" id="slide-5" class="slider__radio">
+
+                <div class="slider__holder">
+
+                    <label for="slide-1" class="slider__item slider__item--1 slider-card">
+                        <img  src="./images/projects/Screenshot1.png" alt="project 1">
+                    </label>
+
+                    <label for="slide-2" class="slider__item slider__item--2 slider-card">
+                        <img  src="./images/projects/Screenshot2.png" alt="project 2">
+                    </label>
+
+                    <label for="slide-3" class="slider__item slider__item--3 slider-card">
+                        <img  src="./images/projects/Screenshot3.png" alt="project 3">
+                    </label>
+
+                    <label for="slide-4" class="slider__item slider__item--4 slider-card">
+                        <img  src="./images/projects/Screenshot4.png" alt="project 4">
+                    </label>
+
+                    <label for="slide-5" class="slider__item slider__item--5 slider-card">
+                        <img  src="./images/projects/Screenshot5.png" alt="project 5">
+                    </label>
+
+                </div><!-- slider__holder -->
+
+                <div class="bullets">
+
+                    <label for="slide-1" class="bullets__item bullets__item--1"></label>
+                    <label for="slide-2" class="bullets__item bullets__item--2"></label>
+                    <label for="slide-3" class="bullets__item bullets__item--3"></label>
+                    <label for="slide-4" class="bullets__item bullets__item--4"></label>
+                    <label for="slide-5" class="bullets__item bullets__item--5"></label>
+
+                </div> <!-- Bullets -->
             </div>
         </div>
         <div class="section-number right inverse">
@@ -74,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="technology">
         <div class="section-number left">
             <div class="section-number__block">
                 <div class="section-number__number">
@@ -85,7 +117,7 @@
                 </h3>
             </div>
         </div>
-        <div class="projects__content">
+        <div class="technology__content">
             <div class="honeycomb-container">
                 <div class="honeycomb-item">
                     <img class="hexagon" src="./images/angular.png" alt="angular">
